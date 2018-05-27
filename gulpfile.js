@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 	htmlmin = require('gulp-htmlmin'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
@@ -104,13 +104,13 @@ gulp.task('svg', function () {
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'js', 'html'], function () {
-    var buildCss = gulp.src([
+    const buildCss = gulp.src([
         'app/css/main.min.css'
     ]).pipe(gulp.dest('dist/css'));
-    var buildJs = gulp.src([
+    const buildJs = gulp.src([
         'app/js/scripts.min.js'
     ]).pipe(gulp.dest('dist/js'));
-    var buildFonts = gulp.src([
+    const buildFonts = gulp.src([
         'app/fonts/**/*'
     ]).pipe(gulp.dest('dist/fonts'));
 });
