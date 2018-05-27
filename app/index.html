@@ -54,7 +54,7 @@
         </ul>
       </nav>
       <div class="main-header__contacts col-4">
-        <button class="btn" type="button">Написать нам</button>
+        <button class="btn btn__feedback" type="button">Написать нам</button>
         <ul class="socials">
           <li class="socials__item">
             <a href="">vk</a>
@@ -292,7 +292,7 @@
         <a href="">Политика конфиденциальности</a>
       </div>
       <div class="write-us col-5">
-        <button class="btn">Написать нам</button>
+        <button class="btn btn__feedback">Написать нам</button>
         <p class="contacts">
           <a href="">example@email.com</a>
           <a href="">+7(978) 123-45-67</a>
@@ -301,7 +301,32 @@
     </div>
   </div>
 </footer>
-
+<div class="modal-overlay" id="modal-overlay">
+<div class="modal">
+  <form action="" class="form">
+    <div class="modal__header">
+      <button class="modal__close" id="modal__close">Закрыть</button>
+      <h3 class="modal__title">Напишите нам</h3>
+    </div>
+    <label class="form__label">
+      <input class="form__input" placeholder="Имя" type="text">
+    </label>
+    <label class="form__label">
+      <input class="form__input" placeholder="Электронная почта" type="text">
+    </label>
+    <label class="form__label">
+      <input class="form__input" placeholder="Телефон" type="text">
+    </label>
+    <label class="form__label">
+      <input class="form__input" placeholder="Сообщение" type="text">
+    </label>
+    <button class="btn form__order" id="modal__order">Отправить</button>
+    <p class="form__privacy">Отправляю форму, вы подтверждаете, что
+      ознакомлены и согласны с условиями политики
+      конфиденциальности.</p>
+  </form>
+</div>
+</div>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
 <link rel="stylesheet" href="css/main.min.css" type="text/css">
 <script src="js/scripts.min.js"></script>
