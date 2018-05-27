@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: #ffffff;
+  @include fontSize(0.875);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid $border;
+  border-radius: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &--secondary {
+    border-color: transparent;
+    color: $text;
+  }
+  &--circle {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+  }
+}
+
+.btn--secondary {
+  &.btn--checked {
+    color: #11143b;
+    border-color: #d2d2d4;
+  }
+}
